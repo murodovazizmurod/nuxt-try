@@ -30,13 +30,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "JetBrains Mono Regular", sans-serif;
-  font-weight: 700;
+  font-family: "JetBrains Mono Light", sans-serif;
+  font-weight: 400;
+  transition: all .2s ease-in;
 }
 
 body {
   background-color: #050505;
   color: #bbb;
+}
+
+b, strong {
+  font-family: "JetBrains Mono Bold", sans-serif;
+
 }
 
 ::-webkit-scrollbar {
@@ -56,23 +62,18 @@ body {
 }
 
 a {
-  transition: 0.1s color ease-in;
+  transition: 0.4s all ease-in;
   color: #bbb;
   text-decoration: none;
   border-bottom: 2px solid #bbb;
 }
 
 a:hover {
-  transition: 0.1s color ease-in;
+  transition: 0.4s all ease-in;
   color: #ddd;
   border-bottom: 2px solid #ddd;
 }
 
-a.router-link-active, a.router-link-exact-active {
-  color: #ddd;
-  transition: 0.1s color ease-in;
-  border-bottom: 2px solid #ddd;
-}
 
 p {
   font-size: 0.9rem;
@@ -80,6 +81,13 @@ p {
 
 p, blockquote, pre, ul, ol {
     margin-bottom: 1rem;
+}
+
+p > code {
+  background-color: #555;
+  color: #fafafa;
+  padding: 1px 5px;
+  border-radius: 5px;
 }
 
 ul,
@@ -104,14 +112,13 @@ blockquote {
 
 pre {
   overflow-x: auto;
-  padding: 5px;
+  padding: 15px;
   border-radius: 5px;
-  background-color: #333;
+  background-color: #222;
 }
 
 pre > code {
   font-size: 0.9rem;
-
 }
 
 pre::-webkit-scrollbar {

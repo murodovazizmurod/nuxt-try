@@ -3,14 +3,22 @@
         <h1><nuxt-link to="/"><img src="../assets/images/logo.png" alt="Logo"></nuxt-link></h1>
         <ul>
             <li><nuxt-link to="/about">/about</nuxt-link></li>
-            <li><nuxt-link to="/blog">/blog</nuxt-link></li>
-            <li><nuxt-link to="/contact">/contact</nuxt-link></li>
+            <li> ● <nuxt-link to="/blog">/blog</nuxt-link></li>
+            <li> ● <nuxt-link to="/contact">/contact</nuxt-link></li>
         </ul>
     </header>
 </template>
 
 <script setup>
 
+useHead({
+  script: [
+    {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css',
+      tagPosition: 'head'
+    }
+  ]
+})
 
 </script>
 
@@ -31,7 +39,19 @@ header>h1>a>img {
     height: 60px;
 }
 
-h1 > a {
+a {
+    border-bottom: none;
+
+}
+
+
+a.router-link-active,
+a.router-link-exact-active {
+    transition: 0.1s color ease-in;
+    border-bottom: 2px solid #ddd;
+}
+
+h1>a {
     border-bottom: none;
 }
 
@@ -41,6 +61,6 @@ ul {
 }
 
 ul>li {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 </style>

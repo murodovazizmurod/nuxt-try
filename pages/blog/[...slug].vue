@@ -1,13 +1,13 @@
 <template>
   <main>
-    <nuxt-link to="/blog" class="back-button">cd ..</nuxt-link><br>
+    <nuxt-link to="/blog" class="back-button">cd ..</nuxt-link>
     <ContentDoc v-slot="{ doc }">
-      <h1 v-html="doc.title"></h1>
+      <h1 class="post-title">{{ doc.title }}</h1>
       <div class="meta">
         <span class="date">{{ doc.date }}</span>
-        <span class="dot">&#8226;</span>
+        <span class="dot"> ● </span>
         <div class="tags" style="display:flex">
-          <span style="margin-right: 1rem;">tags:</span>
+          <!-- <span style="margin-right: 1rem;">tags:</span> -->
           <ul>
             <li v-for="i in doc.tags" :key="i">/{{ i }}</li>
           </ul>
@@ -29,13 +29,18 @@ div.meta {
   margin-bottom: 15px;
 }
 
+
+h1.post-title {
+  margin-top: 3.5rem;
+}
+
 div.tags {
   display: flex; 
   align-items: center;
 }
 
 div.tags > ul > li {
-  background-color: #ddd;
+  background-color: #dddddde0;
   color: #050505;
   padding: 3px;
   border-radius: 5px;
@@ -64,4 +69,5 @@ ul>li {
   margin-right: 1rem;
   margin-bottom: 0px;
 }
+
 </style>

@@ -3,18 +3,16 @@
         <Header></Header>
         <div class="content">
             <slot />
-
         </div>
+        <Footer />
     </main>
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-
-
 div.content {
     max-width: 45rem;
     margin: 2rem auto;
-    padding: 15px;
+    padding: 1rem;
 }
+
 </style>
