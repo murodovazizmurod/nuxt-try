@@ -5,8 +5,8 @@
       <h1 v-html="doc.title"></h1>
       <div class="meta">
         <span class="date">{{ doc.date }}</span>
-        <span class="dot">&#8226;</span>
-        <div class="tags" style="display:flex">
+        <span class="dot">●</span>
+        <div class="tags">
           <span style="margin-right: 1rem; font-family: 'JetBrains Mono Bold', sans-serif;">tags:</span>
           <ul>
             <li v-for="i in doc.tags" :key="i">/{{ i }}</li>
@@ -27,6 +27,18 @@ div.meta {
   display: flex;
   align-items: baseline;
   margin-bottom: 15px;
+}
+
+div.tags {
+  display: flex; 
+  align-items: center;
+}
+
+div.tags > ul > li {
+  background-color: #ddd;
+  color: #050505;
+  padding: 3px;
+  border-radius: 5px;
 }
 
 

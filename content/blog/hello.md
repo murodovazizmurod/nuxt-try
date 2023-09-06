@@ -1,6 +1,6 @@
 ---
 title: A letter to Modern Frontends
-date: '06/09/23 15:01'
+date: 'September 6'
 tags:
   - conference
   - letter

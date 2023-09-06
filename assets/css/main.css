@@ -57,15 +57,15 @@ body {
 
 a {
   transition: 0.1s color ease-in;
-  color: #ddd;
+  color: #bbb;
   text-decoration: none;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #bbb;
 }
 
 a:hover {
   transition: 0.1s color ease-in;
-  color: #bbb;
-  border-bottom: 1px solid #bbb;
+  color: #ddd;
+  border-bottom: 2px solid #ddd;
 }
 
 a.router-link-active, a.router-link-exact-active {
