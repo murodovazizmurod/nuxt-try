@@ -21,12 +21,6 @@
 </template>
 
 
-<script>
-defineOgImageStatic({
-  title: 'salom'
-})
-</script>
-
 
 <style scoped>
 div.meta {
