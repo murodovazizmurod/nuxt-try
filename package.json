@@ -13,7 +13,6 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
     "nuxt": "^3.7.1",
-    "nuxt-og-image": "^1.5.9",
     "nuxt-site-config": "^1.0.11",
     "nuxt-site-config-kit": "^1.0.11"
   },
