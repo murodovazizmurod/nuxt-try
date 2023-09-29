@@ -20,6 +20,14 @@
   </main>
 </template>
 
+
+<script>
+defineOgImageStatic({
+  title: 'salom'
+})
+</script>
+
+
 <style scoped>
 div.meta {
   font-size: .8rem;

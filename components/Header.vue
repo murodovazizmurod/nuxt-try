@@ -2,8 +2,7 @@
     <header>
         <h1><nuxt-link to="/"><img src="../assets/images/logo.png" alt="Logo"></nuxt-link></h1>
         <ul>
-            <li><nuxt-link to="/about">/about</nuxt-link></li>
-            <li> ● <nuxt-link to="/blog">/blog</nuxt-link></li>
+            <li><nuxt-link to="/blog">/blog</nuxt-link></li>
             <li> ● <nuxt-link to="/contact">/contact</nuxt-link></li>
         </ul>
     </header>
@@ -11,14 +10,6 @@
 
 <script setup>
 
-useHead({
-  script: [
-    {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css',
-      tagPosition: 'head'
-    }
-  ]
-})
 
 </script>
 
