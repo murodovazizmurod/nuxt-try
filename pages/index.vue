@@ -15,14 +15,13 @@
         > loves tennis; trying calisthenics; procrastinator;<br>
         > <br>
         > experimenting with style;<br>
-        > 
       </p><br>
-      <center>
+      <div style="text-align:center;">
         <a href="https://t.me/murodov_azizmurod">telegram</a> | <a href="https://github.com/murodovazizmurod">github</a> | <a href="https://www.linkedin.com/in/azizmurod-murodov/">linkedin</a>
-      </center><br>
-      <center>
+      </div><br>
+      <div style="text-align:center;">
       <small>root [at] azizmurod [dot] uz</small>
-      </center>
+      </div>
 
     </div>
     
