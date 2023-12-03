@@ -1,5 +1,5 @@
 <template>
     <div>
-        contact
+        resume
     </div>
 </template>

@@ -1,3 +1,4 @@
+
 <template>
     <div>
         <ContentList path="/blog" v-slot="{ list }">

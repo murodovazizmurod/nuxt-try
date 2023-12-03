@@ -3,7 +3,7 @@
         <h1><nuxt-link to="/"><img src="../assets/images/logo.png" alt="Logo"></nuxt-link></h1>
         <ul>
             <li><nuxt-link to="/blog">/blog</nuxt-link></li>
-            <li> ● <nuxt-link to="/contact">/contact</nuxt-link></li>
+            <li> ● <a href="https://drive.google.com/file/d/1A4Uxho2Qf2JMIMHUJnBg0Q803okePAv3/view?usp=drive_link">/resume</a></li>
         </ul>
     </header>
 </template>
