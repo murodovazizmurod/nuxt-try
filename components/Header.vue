@@ -14,6 +14,9 @@ useHead({
   meta: [
     { name: 'description', content: 'a bit autistic version of my website where i write only using lowercase)' }
   ],
+  htmlAttrs: {
+    lang: 'en'
+  }
 })
 useSeoMeta({
   title: 'murodov azizmurod v2.0',
