@@ -8,4 +8,6 @@ description: just first post on this blog
 slug: hello
 ---
 
-# Hellosudo su
+```py
+print('Hello world!')
+```
