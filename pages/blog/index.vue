@@ -1,6 +1,7 @@
-
+    
 <template>
     <div>
+        <NuxtLoadingIndicator color="white" />
         <ContentList path="/blog" v-slot="{ list }">
             <article v-for="blog in list" :key="blog._path" class="article">
                 > <NuxtLink :to="`/blog/${blog.slug}`">

@@ -1,5 +1,6 @@
 <template>
   <main>
+    <NuxtLoadingIndicator color="white" />
     <nuxt-link to="/blog" class="back-button">cd ..</nuxt-link>
     <ContentDoc v-slot="{ doc }">
       <h1 class="post-title">{{ doc.title }}</h1>

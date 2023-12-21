@@ -1,13 +1,13 @@
 <template>
   <div>
-    
-    <div class="main">
+    <div class="h-screen">
+      <div v-if="loading" class="loader-screen">loading...</div>
+      <div class="main">
       <h1>$ whoami</h1>
       <br>
       <p>
         > my name is azizmurod; <br>
         > <br>
-        > narxoz'27 <br>
         ><br>
         > enthusiastic self-taught developer from <a href="https://en.wikipedia.org/wiki/Navoiy"><img alt='Location Icon' draggable="false" style="width:15px;height:15px;margin-bottom: -3px;margin-right: 2px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvUlEQVR4nLXWu2oVURTG8aNJsFAwitdgJYiFIF7w8gQWURBfIE1UrERtvKQLUYSAEkWMCuobKAqCZXKCWkm0FyUqiqIpU/5kwyqGzTnMnpM4zTDfrLX+s9f6Zs+0WgUHVuMozuJynI8kvSS/pHgquIB5TONmnD+EfrpnGNbhJWawv0vMAcziOdb2soIXeIz+mth+PAlQ+YqiRTN1gAzUxmirwSoW8hahDydwEcfTdXb/IL5gVQkkuWg+0zbgXazuVszhLQazuI84XNqq6Ux7iNuZNtUl7kwJZAwTmfYd2zNtKOmZdh3XSiAX0lP2CLmD8yWQk3iVaQ+q4DRc3O3QrtfJHCWQ9IR/MFDRBmPQ7Rj8HN5UB481WMSWWkgkJCcd62Dh4bDwcAcLJ3u3iwCRcCVvRUHOU1xqkrADf7GxMH5bxJe1qpKY9qOxwtgbuNcIEIl78APra+I24zd2NoZEgUeYrIm5n+8GTSFb8Qu7u9zfi59pb+sZEoXOxTvRl+kDeI+RZQEqb3f6Ql7N9HE8WzYgs+g37IvrQ/iKTSsGicKn8Am78Dl9uFYUUAFNYin9sfwXQEDS/jWSm6Du+AcJmFc1+geZBgAAAABJRU5ErkJggg==">navoi, uzbekistan</a><br>
         > breathes; walks; talks;<br>
@@ -24,9 +24,23 @@
       </div>
 
     </div>
+    </div>
+    
     
   </div>
 </template>
+
+
+<script setup lang="ts">
+const nuxtApp = useNuxtApp();
+const loading = ref(true);
+nuxtApp.hook("page:start", () => {
+  loading.value = true;
+});
+nuxtApp.hook("page:finish", () => {
+  loading.value = false;
+});
+</script>
 
 
 <style scoped>
@@ -36,5 +50,19 @@ div.main {
   border: 1px solid #999;
   padding: 18px;
   border-radius: 8px;
+}
+
+.loader-screen {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 </style>

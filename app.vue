@@ -1,11 +1,11 @@
 <template>
   <div>
-    <NuxtLayout>
-      <NuxtLoadingIndicator color="white" />
-      <NuxtPage />
-    </NuxtLayout>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
   </div>
 </template>
+
 
 <style>
 .page-enter-active,
@@ -16,4 +16,6 @@
 .page-leave-to {
   opacity: 0;
 }
+
+
 </style>
